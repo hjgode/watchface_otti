@@ -1,0 +1,3 @@
+fontimage --pixelsize 20 --text km -o km_comicsans.png /usr/share/fonts/truetype/ComicSansMS/design.graffiti.comicsansms.ttf
+convert km_comicsans.png -negate km_comicsans1.png
+convert km_comicsans1.png -transparent black km_comicsans2.png
