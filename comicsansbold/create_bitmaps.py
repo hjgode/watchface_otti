@@ -12,5 +12,5 @@ for glyph in font:
             name = font[glyph].glyphname
         # or name it with ' + "_" + str(font[glyph].unicode)' added
         print ("glyph: " + glyph + ", unicode: " + str(font[glyph].unicode) + ", name: " + name + "\n")
-        font[glyph].export("c:/temp/" + name  + ".png")
+        font[glyph].export("c:/temp/" + name  + ".png", 22)
         
