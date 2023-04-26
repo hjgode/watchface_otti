@@ -1,0 +1,53 @@
+# https://en.wikipedia.org/wiki/Adobe_Glyph_List
+
+chr() {
+  [ "$1" -lt 256 ] || return 1
+  printf "\\$(printf '%03o' "$1")"
+}
+
+ord() {
+  LC_CTYPE=C printf '%d' "'$1"
+}
+
+Usage:
+
+chr 65
+A
+
+ord A
+65
+
+
+0020 		space 
+0021 	! 	exclam 
+0022 	" 	quotedbl 
+0023 	# 	numbersign 
+0024 	$ 	dollar 
+0025 	% 	percent 
+0026 	& 	ampersand 
+0027 	' 	quotesingle 
+0028 	( 	parenleft 
+0029 	) 	parenright 
+002A 	* 	asterisk 
+002B 	+ 	plus 
+002C 	, 	comma 
+002D 	- 	hyphen 
+002E 	. 	period 
+002F 	/ 	slash 
+
+003A 	: 	colon 
+003B 	; 	semicolon 
+003C 	< 	less 
+003D 	= 	equal 
+003E 	> 	greater 
+003F 	? 	question 
+0040 	@ 	at 
+
+005B 	[ 	bracketleft 
+005C 	\ 	backslash 
+005D 	] 	bracketright 
+005E 	^ 	asciicircum 
+005F 	_ 	underscore 
+0060 	` 	grave 
+
+
