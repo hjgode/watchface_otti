@@ -1,0 +1,9 @@
+cd "C:\Program Files (x86)\FontForgeBuilds\bin"
+
+ffpython.exe "C:\Users\hjgode.LODATA\OneDrive - Lodata\Dokumente\create_bitmaps.py" "C:\Users\hjgode.LODATA\OneDrive - Lodata\Dokumente\Verdana-Bold_ASCII.sfd"
+
+#negate?
+c:\tools\ImageMagick-7.1.0-Q8\magick.exe mogrify -format png -negate c:\temp\*.jpg
+
+#transparent
+c:\tools\ImageMagick-7.1.0-Q8\magick.exe mogrify -format png -fuzz 10% -transparent #000000 c:\temp\*.jpg
